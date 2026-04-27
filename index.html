@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>GBN Store - Coming Soon</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" type="module"></script>
+  </head>
+
+  <body>
+    <main class="page">
+      <header class="header">
+        <img
+          src="./imgs/logo.png"
+          alt="GBN Store"
+          class="logo"
+          onerror="
+            this.style.display = 'none';
+            document.querySelector('.logo-text').style.display = 'block';
+          "
+        />
+
+        <div class="logo-text">GBN Store</div>
+
+        <h1>Coming <span>Soon</span></h1>
+
+        <p class="subtitle">
+          Collect gadgets. Jump over walls. GBN Store is launching soon.
+        </p>
+      </header>
+
+      <section class="game-wrap">
+        <div class="game-top">
+          <div>Press Space / Tap to Start</div>
+          <div class="collected" data-collected>📱 0 | 💻 0 | 🎧 0 | ⌚ 0</div>
+          <div class="score" data-score>0</div>
+        </div>
+
+        <div class="world" data-world>
+          <div class="start-screen" data-start-screen>
+            Press Space or Tap to Start
+          </div>
+
+          <img src="imgs/ground.png" class="ground" data-ground />
+          <img src="imgs/ground.png" class="ground" data-ground />
+
+          <img src="imgs/dino-stationary.png" class="dino" data-dino />
+        </div>
+      </section>
+
+      <p class="hint">
+        Space / Arrow Up / Tap to jump · Collect gadgets for +25 points
+      </p>
+    </main>
+  </body>
+</html>
